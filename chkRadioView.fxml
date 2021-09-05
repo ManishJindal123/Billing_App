@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="700.0" minWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chkRadio.chkRadioViewController">
+   <children>
+      <Label layoutX="190.0" layoutY="24.0" prefHeight="30.0" prefWidth="178.0" text="     Billing App">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="chkAll" layoutX="64.0" layoutY="75.0" mnemonicParsing="false" onAction="#doChkUnchk" prefHeight="22.0" prefWidth="99.0" text="Select All">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="chkDosa" layoutX="102.0" layoutY="112.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="70.0" text="Dosa">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="chkPizza" layoutX="103.0" layoutY="155.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="70.0" text="Pizza">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="chkuBurger" layoutX="103.0" layoutY="198.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="78.0" text="Burger">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </CheckBox>
+      <Button layoutX="174.0" layoutY="228.0" mnemonicParsing="false" onAction="#doShow" prefHeight="26.0" prefWidth="171.0" text="Show Selected">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblitems" layoutX="61.0" layoutY="290.0" prefHeight="28.0" prefWidth="250.0" text="Selected items">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTotal" layoutX="368.0" layoutY="290.0" prefHeight="18.0" prefWidth="147.0" text="bill">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="356.0" prefHeight="28.0" prefWidth="78.0" text="Discount">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <RadioButton layoutX="208.0" layoutY="356.0" mnemonicParsing="false" onAction="#doDiscount10" prefHeight="27.0" prefWidth="78.0" text="10%">
+         <toggleGroup>
+            <ToggleGroup fx:id="dis" />
+         </toggleGroup>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton layoutX="405.0" layoutY="356.0" mnemonicParsing="false" onAction="#doDiscount20" prefHeight="26.0" prefWidth="78.0" text="20%" toggleGroup="$dis">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </RadioButton>
+      <Label fx:id="lblDiscount" layoutX="72.0" layoutY="424.0" prefHeight="28.0" prefWidth="147.0" text="Discount">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="190.0" layoutY="117.0" text="80" />
+      <Label layoutX="190.0" layoutY="158.0" text="100" />
+      <Label layoutX="190.0" layoutY="201.0" text="50" />
+      <TextField fx:id="txtnet" layoutX="185.0" layoutY="505.0" />
+   </children>
+</AnchorPane>
